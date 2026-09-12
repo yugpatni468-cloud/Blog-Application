@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>BlogSpace - Create Blog</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+
+        <div class="logo">
+            BlogSpace
+        </div>
+
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="create-blog.html">Create Blog</a>
+            <a href="login.html" onclick="logout()">Logout</a>
+        </div>
+
+    </nav>
+
+
+    <!-- Create Blog -->
+    <main class="create-blog-page">
+
+        <div class="create-blog-card">
+
+            <h1>Create New Blog</h1>
+
+            <p class="create-subtitle">
+                Share your thoughts and ideas with the world.
+            </p>
+
+
+            <form id="blogForm">
+
+                <!-- Blog Title -->
+                <div class="form-group">
+
+                    <label for="blogTitle">
+                        Blog Title
+                    </label>
+
+                    <input
+                        type="text"
+                        id="blogTitle"
+                        placeholder="Enter your blog title"
+                        required
+                    >
+
+                </div>
+
+
+                <!-- Category -->
+                <div class="form-group">
+
+                    <label for="category">
+                        Category
+                    </label>
+
+                    <select id="category" required>
+
+                        <option value="">
+                            Select a category
+                        </option>
+
+                        <option value="Technology">
+                            Technology
+                        </option>
+
+                        <option value="Career">
+                            Career
+                        </option>
+
+                        <option value="Design">
+                            Design
+                        </option>
+
+                        <option value="Lifestyle">
+                            Lifestyle
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <!-- Blog Content -->
+                <div class="form-group">
+
+                    <label for="blogContent">
+                        Blog Content
+                    </label>
+
+                    <textarea
+                        id="blogContent"
+                        rows="10"
+                        placeholder="Write your blog here..."
+                        required
+                    ></textarea>
+
+                </div>
+
+
+                <!-- Buttons -->
+                <div class="blog-actions">
+
+                    <button
+                        type="button"
+                        class="cancel-btn"
+                        onclick="window.location.href='dashboard.html'">
+                        Cancel
+                    </button>
+
+                    <button
+                        type="submit"
+                        class="auth-btn publish-btn">
+                        Publish Blog
+                    </button>
+
+                </div>
+
+            </form>
+
+        </div>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <p>
+            © 2026 BlogSpace. All Rights Reserved.
+        </p>
+
+    </footer>
+
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

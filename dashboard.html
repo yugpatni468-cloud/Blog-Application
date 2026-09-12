@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>BlogSpace - Dashboard</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+
+        <div class="logo">
+            BlogSpace
+        </div>
+
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="create-blog.html">Create Blog</a>
+            <a href="login.html" onclick="logout()">Logout</a>
+        </div>
+
+    </nav>
+
+
+    <!-- Dashboard -->
+    <main class="dashboard">
+
+        <div class="dashboard-header">
+
+            <div>
+                <h1>My Dashboard</h1>
+
+                <p>
+                    Welcome back! Manage your blogs from here.
+                </p>
+            </div>
+
+            <a href="create-blog.html" class="btn primary-btn dashboard-btn">
+                + Create Blog
+            </a>
+
+        </div>
+
+
+        <!-- Statistics -->
+        <section class="stats">
+
+            <div class="stat-card">
+
+                <div class="stat-icon">
+                    📝
+                </div>
+
+                <div>
+                    <h3>12</h3>
+                    <p>Total Blogs</p>
+                </div>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <div class="stat-icon">
+                    👁️
+                </div>
+
+                <div>
+                    <h3>1,245</h3>
+                    <p>Total Views</p>
+                </div>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <div class="stat-icon">
+                    ❤️
+                </div>
+
+                <div>
+                    <h3>328</h3>
+                    <p>Total Likes</p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Recent Blogs -->
+        <section class="dashboard-section">
+
+            <h2>My Recent Blogs</h2>
+
+           <div class="dashboard-table">
+
+    <div class="table-header">
+        <span>Title</span>
+        <span>Category</span>
+        <span>Status</span>
+        <span>Action</span>
+    </div>
+
+    <!-- Blogs will appear here -->
+    <div id="blogList"></div>
+
+</div>
+
+
+                <div class="table-row">
+
+                    <span>
+                        Getting Started With Web Development
+                    </span>
+
+                    <span>
+                        Technology
+                    </span>
+
+                    <span class="status published">
+                        Published
+                    </span>
+
+                    <a href="#">
+                        Edit
+                    </a>
+
+                </div>
+
+
+                <div class="table-row">
+
+                    <span>
+                        My Journey as a Developer
+                    </span>
+
+                    <span>
+                        Career
+                    </span>
+
+                    <span class="status published">
+                        Published
+                    </span>
+
+                    <a href="#">
+                        Edit
+                    </a>
+
+                </div>
+
+
+                <div class="table-row">
+
+                    <span>
+                        Understanding CSS Flexbox
+                    </span>
+
+                    <span>
+                        Design
+                    </span>
+
+                    <span class="status draft">
+                        Draft
+                    </span>
+
+                    <a href="#">
+                        Edit
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <p>
+            © 2026 BlogSpace. All Rights Reserved.
+        </p>
+
+    </footer>
+
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
